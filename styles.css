@@ -1,0 +1,129 @@
+/* NAVBAR */
+#my-nav .nav-link{
+  width: 100px;
+}
+#my-nav .nav-item{
+  padding: 0 10%;
+}
+.my-bar{
+  margin: 0 0 0 40%;
+}
+
+
+
+#register{
+  display: none;
+}
+
+
+.login-block{
+    background: #DE6262;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #FFB88C, #DE6262);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #FFB88C, #DE6262); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+float:left;
+width:100%;
+padding : 100px 0;
+}
+.banner-sec{
+  background-size:cover;
+  min-height:500px;
+  border-radius: 10px 10px 10px 10px;
+  padding:0;
+}
+.container{
+  background:#fff;
+  border-radius: 10px;
+  box-shadow:15px 20px 0px rgba(0,0,0,0.1);
+}
+.carousel-inner
+{
+  border-radius:0 10px 10px 0;
+}
+.carousel-caption{
+  background-color: red;
+  text-align:left;
+  left:5%;
+}
+.login-sec{
+  padding: 50px 30px;
+  position:relative;
+}
+.login-form h2{
+  margin-bottom:30px;
+  font-weight:800;
+  font-size:30px;
+  color: #DE6262;
+}
+.form-group{
+  margin: 3% 0;
+
+}
+.form-group p{
+  font-size: 0.8rem;
+}
+.login-form h2:after{
+  content:" ";
+  width:100px;
+  height:5px;
+  background:#FEB58A;
+  display:block;
+  margin-top:20px;
+  border-radius:3px;
+  margin-left:auto;
+  margin-right:auto
+}
+.btn-login{
+  background: #DE6262;
+  color:#fff;
+  font-weight:600;
+}
+.banner-text{
+  width:70%;
+  position:absolute;
+  bottom:40px;
+  padding-left:20px;
+}
+.banner-text h2{
+  color:#fff;
+  font-weight:600;
+}
+.banner-text h2:after{
+  content:" ";
+  width:100px;
+  height:5px;
+  background:#FFF;
+  display:block;
+  margin-top:20px;
+  border-radius:3px;
+}
+.banner-text p{
+  color:#fff;
+ }
+
+
+
+ @media (max-width: 1050px) {
+ .banner-sec{
+   width: 960 !important;
+ }
+ .form-group{
+   margin: 3% 0;
+
+ }
+ .login-sec{
+   margin-top: -100px;
+ }
+ .carousel-caption{
+   display: hidden;
+ }
+}
+
+
+ @media (max-width: 700px) {
+   .banner-sec{
+     min-height:200px;
+   }
+   .login-sec{
+     margin-top: 10px;
+   }
+ }
