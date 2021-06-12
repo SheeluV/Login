@@ -10,7 +10,6 @@
   <!-- font awesome -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
@@ -82,6 +81,19 @@
 
           <form id="login" class="login-form">
             <h2 class="text-center">Login Now</h2>
+
+            <div class="row">
+              <div class="button col-xs-6 col-sm-6 col-md-6">
+                <a href="#" class="btn btn-lg btn-primary btn-block"><i class="fab fa-facebook"></i> Facebook</a>
+              </div>
+              <div class="button col-xs-6 col-sm-6 col-md-6">
+                <a href="#" class="btn btn-lg btn-info btn-block"><i class="fab fa-google"></i> Google</a>
+              </div>
+            </div>
+            <div class="login-or">
+              <hr class="hr-or">
+              <span class="span-or">or</span>
+            </div>
             <div class="form-group">
               <label for="exampleInputEmail1" class="text-uppercase">Username</label>
               <input type="text" class="form-control" placeholder="Your Username">
@@ -108,21 +120,33 @@
           </form>
           <form id="register" class="login-form">
             <h2 class="text-center">Register Now</h2>
+            <div class="row">
+              <div class="button col-xs-6 col-sm-6 col-md-6">
+                <a href="#" class="btn btn-lg btn-primary btn-block"><i class="fab fa-facebook"></i> Facebook</a>
+              </div>
+              <div class="button col-xs-6 col-sm-6 col-md-6">
+                <a href="#" class="btn btn-lg btn-info btn-block"><i class="fab fa-google"></i> Google</a>
+              </div>
+            </div>
+            <div class="login-or">
+              <hr class="hr-or">
+              <span class="span-or">or</span>
+            </div>
             <div class="form-group">
               <label for="exampleInputEmail1" class="text-uppercase">Email</label>
               <input type="email" class="form-control" placeholder="Your Email address" id="email"
                 pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*$">
             </div>
 
-            <div class="form-group">
+            <!-- <div class="form-group">
               <label for="exampleInputEmail1" class="text-uppercase">Username</label>
               <input type="text" class="form-control" placeholder="Enter a username">
 
-            </div>
+            </div> -->
             <div class="form-group">
               <label for="exampleInputPassword1" class="text-uppercase">Password</label>
               <input type="password" class="form-control" id="password" placeholder="Create password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required>
-              <p>Must contain at least 1 uppercase character, 1 lowercase character, and 1 number</p>
+              <p>Must contain at least 1 number, 1 uppercase & 1 lowercase character</p>
             </div>
             <button type="submit" class="btn btn-login float-right">Register</button>
             <div class="footer">
