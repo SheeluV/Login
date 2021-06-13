@@ -3,10 +3,16 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="google-signin-client_id" content="1090526185511-h6cj0eei4v12l5ksaa7bmo6soak53qpa.apps.googleusercontent.com">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
   <title>Log In</title>
 
+
+
+
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
   <!-- font awesome -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 
@@ -86,9 +92,7 @@
               <div class="button col-xs-6 col-sm-6 col-md-6">
                 <a href="#" class="btn btn-lg btn-primary btn-block"><i class="fab fa-facebook"></i> Facebook</a>
               </div>
-              <div class="button col-xs-6 col-sm-6 col-md-6">
-                <a href="#" class="btn btn-lg btn-info btn-block"><i class="fab fa-google"></i> Google</a>
-              </div>
+              <div class="g-signin2" data-onsuccess="onSignIn"></div>
             </div>
             <div class="login-or">
               <hr class="hr-or">
@@ -173,6 +177,11 @@
       }
     );
   </script>
+
+
+
+
+
 
 </body>
 
